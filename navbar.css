@@ -1,0 +1,13 @@
+#navbar{
+    text-align:center;
+}
+#navbar li{
+ display:inline-block;
+ border: 2px dashed blue;
+ padding: 3px;
+ color: white;
+}
+#navbar a{ color:white;
+font-family: courier;
+text-decoration: none;
+}
