@@ -19,14 +19,51 @@
           #hardware-h{text-align: center;
         color:white;
         text-decoration:underline;}
+        
         .hardware-hs{
-            position:absolute;
+            position:relative;
             left:100px;
             text-decoration:underline;
         }
         #intro{
             text-align:center;
             text-decoration:underline;
+        }
+        .hardware-ps{
+            width:60%;
+            margin:30px 30px;
+        }
+        #intro-p{
+            text-align:center;
+        }
+    
+        #img3{
+            position:absolute;
+            width:137px;
+            height:90px;            
+            float:right;
+            right:150px;
+            top:425px;
+            border: 6px groove blue;
+
+        }
+        #img2{
+            position:absolute;
+            width:137px;
+            height:90px;
+            float:right;
+            right:150px;
+            top:275px;
+            border: 6px groove blue;
+        }
+         #img4{
+            position:absolute;
+            width:137px;
+            height:90px;
+            float:right;
+            right:150px;
+            top:555px;
+            border: 6px groove blue;
         }
         </style>
     </head>
@@ -39,13 +76,38 @@
         </ul>
         <h1 id="hardware-h" class="header">Hardware</h1>
         <h2 id="intro">Introduction</h2>
-        <p>
-            Welcome to the Hardware page! This page is here to give a little information about computer hardware. Here you can learn about the motherboard, CPU, RAM, and much more!
+        <p id="intro-p">Welcome to the Hardware page! This page is here to give a little information about computer hardware. Here you can learn about the motherboard, CPU, RAM, and much more!
         </p>
         <h3 id="mother-h" class="header hardware-hs">Motherboard</h3>
-        <p>
+        <p class="hardware-ps"> The motherboard is a printed circuit board that contains the main components of a computer. Some components that the motherboard holds are the CPU, RAM, memory, etc.
+        The purpose of the motherboard is to connect and manage all the computer's subsystems so they can communicate with each other.
+        </p>
+        <img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/MicroATX_Motherboard_with_AMD_Athlon_Processor_2_Digon3.jpg">
+        <h3 id="cpu-h" class="header hardware-hs">CPU</h3>
+        <p class="hardware-ps" id="cpu-p">
+            The Central Processing Unit or the CPU is commonly referred to as the brain of the computer. The CPU handles all the instructions recieved from hardware or software running on the computer.
+        </p>
+        <img id="img3" src="http://images.anandtech.com/doci/6985/DT_Haswell_i7_FB_678x452.jpg">
+        <h3 class="header hardware-hs">RAM</h3>
+        <p class="hardware-ps" id="ram-p">
+            The Random Access Memory, or RAM is a type of computer memory that can be accessed randomly. It is considered "random access" because you can access any memory cell.
+        </p>
+        <img id="img4" src="http://cdn2.hubspot.net/hub/444492/file-2483232956-jpg/Blog/2011/RAM.jpg">
+        <h3 class="header hardware-hs" id="harddrive-hs">Hard Drive</h3>
+        <p class="hardware-ps" id="harddrive-p">
+            The hard drive is the computer's storage. It pretty much stores all the information on your computer, from pictures to your preferences.
+        </p>
+        <h3 class="header hardware-hs" id="keyboard-hs">Keyboard</h3>
+        <p class="hardware-ps" id="keyboard-p">
+            The keyboard is what people use to to insert text into a copmuter. A keyboard contains symbols, letters, and numbers.
+        </p>
+        <h3 class="header hardware-hs" id="mouse-hs">Mouse</h3>
+        <p class="hardware-ps" id="mouse-p">
+            The mouse is the what people use to move the cursor around the screen. With the mouse you can select things, and drag things.
+        </p>
+        <h3 class="header hardware-hs" id="monitor-hs">Monitor</h3>
+        <p class="hardware-ps" id="monitor-p">
             
         </p>
-        <img id="img2" src="http://ecx.images-amazon.com/images/I/A1U8Ys9gjxL._SL1500_.jpg" width="5%">
-    </body>
+        </body>
 </html>
