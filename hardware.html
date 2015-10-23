@@ -22,23 +22,29 @@
         
         .hardware-hs{
             position:relative;
-            left:350px;
+            left:370px;
             text-decoration:underline;
         }
         #mother-h{
-            left:320px;
+            left:410px;
+        }
+        #cpu-h{
+            left:450px;
+        }
+        #ram-h{
+            left:430px;
         }
         #harddrive-hs{
-            left:315px;
+            left:395px;
         }    
         #keyboard-hs{
-            left:325px;
+            left:405px;
         }
         #mouse-hs{
-            left:340px;
+            left:420px;
         }
         #monitor-hs{
-            left:330px;
+            left:410px;
         }
         #intro{
             text-align:center;
@@ -54,18 +60,17 @@
             width:137px;
             height:90px;            
             float:right;
-            right:150px;
-            top:525px;
+            right:90px;
+            top:541px;
             border: 6px groove blue;
-
         }
         #img2{
             position:absolute;
             width:137px;
             height:90px;
             float:right;
-            right:150px;
-            top:360px;
+            right:90px;
+            top:365px;
             border: 6px groove blue;
         }
          #img4{
@@ -73,8 +78,8 @@
             width:137px;
             height:90px;
             float:right;
-            right:150px;
-            top:680px;
+            right:90px;
+            top:693px;
             border: 6px groove blue;
         }
         #img5{
@@ -83,8 +88,8 @@
             height:90px;
             float:right;
             border: 6px groove blue;
-            right:150px;
-            top:830px;
+            right:90px;
+            top:845px;
         }
         #img6{
             position:absolute;
@@ -92,7 +97,8 @@
             height:90px;
             float:right;
             border: 6px groove blue;
-            right:150px;
+            right:90px;
+            top:1003px;
         }
         #img7{
             position:absolute;
@@ -100,7 +106,8 @@
             height:90px;
             float:right;
             border: 6px groove blue;
-            right:150px;
+            right:90px;
+            top:1195px;
         }
         #img8{
             position:absolute;
@@ -108,7 +115,8 @@
             height:90px;
             float:right;
             border: 6px groove blue;
-            right:150px;
+            right:90px;
+            top:1403px;
         }
         .divclass{
             background-color: white;
@@ -116,7 +124,15 @@
             padding: 1px;
             display:inline-block;
             border: 5px inset blue;
+            margin-left: 60px;
             width:60%;
+        }
+        #comm-ps{
+            background-color: white;
+            opacity: 0.5;
+            padding: 1px;
+            display:inline-block;
+            border: 5px inset blue;
         }
         .header{
             color:white;
@@ -131,8 +147,67 @@
             position:relative;
             right:-250px;
         }
+        #comm-ps{
+            background-color: white;
+            opacity: 0.5;
+            padding: 1px;
+            display:inline-block;
+            border: 5px inset blue;
+            width:60%;
+            position:relative;
+            right:-250px;
+        }
         #article-wrap{
             margin:10px 10px;
+        }
+        #eimg1{
+            position:absolute;
+            width:225px;
+            height:25px;
+            top:403px;
+            right:243px;
+        }
+        #eimg2{
+            position:absolute;
+            width:225px;
+            height:25px;
+            top:577px;
+            right:243px;
+        }
+        #eimg3{
+            position:absolute;
+            width:225px;
+            height:25px;
+            top:732px;
+            right:243px;
+        }
+        #eimg4{
+            position:absolute;
+            width:225px;
+            height:25px;
+            top:885px;
+            right:243px;
+        }
+        #eimg5{
+            position:absolute;
+            width:225px;
+            height:25px;
+            top:1043px;
+            right:243px;
+        }
+        #eimg6{
+            position:absolute;
+            width:225px;
+            height:25px;
+            top:1235px;
+            right:243px;
+        }
+        #eimg7{
+            position:absolute;
+            width:225px;
+            height:25px;
+            top:1440px;
+            right:243px;
         }
         </style>
     </head>
@@ -141,7 +216,6 @@
         <ul id="navbar">
             <li> <a href="index.html">Home</a></li>
             <li> <a href="hardware.html">Hardware</a></li>
-            <li> <a href="html-css.html">HTML/CSS</a></li>
         </ul>
         <h1 id="hardware-h" class="header">Hardware</h1>
         <h2 id="intro">Introduction</h2>
@@ -152,54 +226,68 @@
         <div id="article-wrap">
         <h3 id="mother-h" class="header hardware-hs">Motherboard</h3>
         <div class="divclass">
-        <p class="hardware-ps"> The motherboard is a printed circuit board that contains the main components of a computer. Some components that the motherboard holds are the CPU, RAM, memory, etc.
+        <p class="hardware-ps"> The motherboard is a printed circuit board that contains the main components of a computer. Some components that the motherboard holds are the CPU, RAM, USB slot, etc. The motherboard is powered by the power supply unit (PSU).
         The purpose of the motherboard is to connect and manage all the computer's subsystems so they can communicate with each other.
         </p>
         </div>
+        <img id="eimg1" src="http://microchip.wdfiles.com/local--files/_devtool/RJ-45-Cable.png">
         <img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/MicroATX_Motherboard_with_AMD_Athlon_Processor_2_Digon3.jpg">
         <h3 id="cpu-h" class="header hardware-hs">CPU</h3>
         <div class="divclass">
         <p class="hardware-ps" id="cpu-p">
-            The Central Processing Unit or the CPU is commonly referred to as the brain of the computer. The CPU handles all the instructions recieved from hardware or software running on the computer.
+            The Central Processing Unit or the CPU is commonly referred to as the brain of the computer. The CPU handles all the instructions received from hardware or software running on the computer.
         </p>
         </div>
+        <img id="eimg2" src="http://microchip.wdfiles.com/local--files/_devtool/RJ-45-Cable.png">
         <img id="img3" src="http://images.anandtech.com/doci/6985/DT_Haswell_i7_FB_678x452.jpg">
-        <h3 class="header hardware-hs">RAM</h3>
+        <h3 class="header hardware-hs" id="ram-h">RAM</h3>
         <div class="divclass">
         <p class="hardware-ps" id="ram-p">
             The Random Access Memory, or RAM is a type of computer memory that can be accessed randomly. It is considered "random access" because you can access any memory cell.
         </p>
         </div>
+        <img id="eimg3" src="http://microchip.wdfiles.com/local--files/_devtool/RJ-45-Cable.png">
         <img id="img4" src="http://cdn2.hubspot.net/hub/444492/file-2483232956-jpg/Blog/2011/RAM.jpg">
         <h3 class="header hardware-hs" id="harddrive-hs">Hard Drive</h3>
         <div class="divclass">
         <p class="hardware-ps" id="harddrive-p">
-            The hard drive is the computer's storage. It pretty much stores all the information on your computer, from pictures to your preferences.
+            The hard drive is where the software, operating system, and much more get stored. Without a hard drive a computer would not be able to function. 
         </p>
         </div>
+        <img id="eimg4" src="http://microchip.wdfiles.com/local--files/_devtool/RJ-45-Cable.png">
         <img id="img5" src="http://www.dansdata.com/images/samsung_ecogreen/hd103ui1024.jpg">
         <h3 class="header hardware-hs" id="keyboard-hs">Keyboard</h3>
         <div class="divclass">
         <p class="hardware-ps" id="keyboard-p">
-            The keyboard is what people use to to insert text into a copmuter. A keyboard contains symbols, letters, and numbers.
+            The keyboard is what people use to to input text into a copmuter. A keyboard contains symbols, letters, and numbers. There are also gaming computers that are bulit specifically
+            for gamers. These mouses generally are more durable, have better painted letters, and custom/extra keys.
         </p>
         </div>
-        <img id="img6" src="http://netdna.walyou.netdna-cdn.com/wp-content/uploads//2013/04/Zalman-ZM-K400G-USB-Gaming-Keyboard.jpg">
+        <img id="eimg5" src="http://microchip.wdfiles.com/local--files/_devtool/RJ-45-Cable.png">
+        <img id="img6" src="http://www.techspot.com/fileshost/newspics2/2009/logitech-wirelessdesktopmk710.jpg">
         <h3 class="header hardware-hs" id="mouse-hs">Mouse</h3>
         <div class="divclass">
         <p class="hardware-ps" id="mouse-p">
-            The mouse is the what people use to move the cursor around the screen. With the mouse you can select things, and drag things.
+            The mouse is the what people use to move the cursor around the screen. With the mouse you can select things, and drag objects. As well as keyboards, there are gaming mouses and normal mouses. Most gaming
+            mouses contain a customizable DPI button, and custom keys on the side of the mouse. Not all gaming mouses or mouses are the same, some people like bigger mouses with custom buttons on the side and a wired cord, and some like smaller mouses that are wireless.
+            
         </p>
         </div>
+        <img id="eimg6" src="http://microchip.wdfiles.com/local--files/_devtool/RJ-45-Cable.png">
         <img id="img7" src="http://cdn.overclock.net/9/9c/800x600px-LL-9cce80b3_B00BCEK2LK-419wyrHAM3L.jpeg">
         <h3 class="header hardware-hs" id="monitor-hs">Monitor</h3>
         <div class="divclass">
         <p class="hardware-ps" id="monitor-p">
             The monitor is probably the most important thing to have while using a computer. Without the monitor you can not see what is going on!
-            The monitor is connected to the motherboard, and allows you to see what we are doing on the computer.
+            The monitor is connected to the motherboard, and allows you to see what we are doing on the computer. People can buy monitors that are different sizes, like a 20 inch monitor or 24 inch monitor.
         </p>
-        </div>
+        </div>        
+        <img id="eimg7" src="http://microchip.wdfiles.com/local--files/_devtool/RJ-45-Cable.png">
         <img id="img8" src="http://www.blogcdn.com/es.engadget.com/media/2010/04/monitores-samsung-plum-espaa-2-portada.jpg">
+        <h3 class="header hardware-hs" id="comm-hs">How do all these parts communicate with each other?</h3>
+        <p id="comm-ps">
+        All of these components are essential to having a computer, and they all communicate with each other to make a computer.   
+        </p>
         </div>
         </body>
 </html>
