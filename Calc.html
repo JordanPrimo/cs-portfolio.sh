@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Calculator</title>
+	<style>
+	    body{font-family: courier;
+            background-image: url("http://i.stack.imgur.com/NEuip.jpg");
+	    }
+	    #calc{color:white;
+	    text-decoration:underline;
+	    }
+	    #answer{background-color:white;
+	        opacity: 0.5;
+            padding: 1px;
+            display:inline-block;
+            border: 5px inset blue;
+            position:relative;
+            top:50px;
+            left:-250px;
+	    }
+	</style>
+</head>
+<body>
+    <h1 id="calc">Calculator</h1>
+<input type ="text" name="input1" style="width:50px;" id="input1">
+    <select id="dropdown">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+        <option value="=">=</option>
+    </select>
+    <input type ="text" name="input2" style="width:50px;" id="input2">
+    <input type="button" value="Calculate" id="submitButton" />
+
+    <p id="answer">The answer is: <span id="display"></span></p>
+<script src="Calc.js" ></script>
+
+</body>
+</html>
