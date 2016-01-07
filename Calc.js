@@ -6,7 +6,7 @@ var display = document.getElementById('display');
 var dropdown = document.getElementById("dropdown");
 
 button.addEventListener("click", doMath);
-
+/*This is the math involved to do the calculator*/
 function doMath() {
     if  (dropdown.value == "+"){
         answer = parseInt(input1.value) + parseInt(input2.value);

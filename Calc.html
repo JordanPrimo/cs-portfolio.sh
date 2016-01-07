@@ -6,6 +6,7 @@
 	<style>
 	    body{font-family: courier;
             background-image: url("http://i.stack.imgur.com/NEuip.jpg");
+            text-align:center;
 	    }
 	    #calc{color:white;
 	    text-decoration:underline;
@@ -15,14 +16,18 @@
             padding: 1px;
             display:inline-block;
             border: 5px inset blue;
-            position:relative;
             top:50px;
-            left:-250px;
-	    }
+            left:-250;
+            }
+        #img1{position:absolute;
+        text-align:center;
+        top:175px;
+        left:435px;
+        }
 	</style>
 </head>
 <body>
-    <h1 id="calc">Calculator</h1>
+    <h1 id="calc">Do your math here!</h1>
 <input type ="text" name="input1" style="width:50px;" id="input1">
     <select id="dropdown">
         <option value="+">+</option>
@@ -37,6 +42,6 @@
 
     <p id="answer">The answer is: <span id="display"></span></p>
 <script src="Calc.js" ></script>
-
+<img id="img1" src="http://www.newtechmachinery.com/wp-content/uploads/2011/09/calculator.png" width="35%">
 </body>
 </html>
