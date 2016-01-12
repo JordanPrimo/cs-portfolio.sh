@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+</script>
+<style>
+    body{
+        background-image: url("http://i.stack.imgur.com/NEuip.jpg");
+    }
+    #txt{
+        color:black;
+        font-family: courier, monospace;
+        font-size:40px;
+        position:relative;
+        background-color: white;
+        opacity: 0.5;
+        padding: 1px;
+        display:inline-block;
+        border: 5px inset blue;
+        top:200px;
+    }
+    #img2{
+        position:relative;
+        top:245px;
+        left:-210px;
+    }
+    #img1{
+        border: 6px inset blue;
+        position:relative;
+    }
+</style>
+</head>
+<body onload="startTime()">
+    <ul id="navbar">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="hardware.html">Hardware</a></li>
+            <li> <a href="Calc.html">Calculator</a></li>
+            <li> <a href="info.html">Info Site</a></li>
+            <li> <a href="clock.html">Clocks</a></li>
+        </ul>
+<img id="img1" src="http://shasta.summitps.org/_/rsrc/1371078228653/config/customLogo.gif?revision=4" width="225px">
+<div id="txt"></div>
+<img id="img2" src="http://www.powerlineplus.com/wp-content/uploads/2013/08/TV-Border-transparent.png" width="210px" height="100;x">
+</body>
+</html>
