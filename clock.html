@@ -4,12 +4,14 @@
     <link rel="stylesheet" href="navbar.css" type="text/css" />
 <script>
 function startTime() {
+    //This is creating the variables that will hold the hours, minutes, and seconds for the clock.
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
+    //This is creating the order in which the variables will be displayed on the website.
     document.getElementById('txt').innerHTML =
     h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
@@ -18,32 +20,72 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  
     return i;
 }
+var pic1Img = "<img class='imagesImg' src='http://orig15.deviantart.net/5810/f/2015/141/f/7/colorful_backgrounds_00394612_by_shinyrai-d8u71c5.jpg'/>";
+var pic2Img = "<img class='imagesImg' src='http://i.stack.imgur.com/NEuip.jpg'/>";
+var pic3Img = "<img class='imagesImg' src='http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg'/>";
+var pic4Img = "<img class='imagesImg' src='https://7-themes.com/data_images/out/76/7030767-3d-background-wallpaper.jpg'/>";
+
+if("click"){
+var randNum = Math.floor((Math.random()*(pictures.length)) + 0);
+        display.innerHTML = pictures[randNum];
+}
+var pictures = ["http://orig15.deviantart.net/5810/f/2015/141/f/7/colorful_backgrounds_00394612_by_shinyrai-d8u71c5.jpg, http://i.stack.imgur.com/NEuip.jpg, http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg, https://7-themes.com/data_images/out/76/7030767-3d-background-wallpaper.jpg"];
+
 </script>
+
 <style>
     body{
-        background-image: url("http://i.stack.imgur.com/NEuip.jpg");
+        font-family: courier;
     }
     #txt{
         color:black;
         font-family: courier, monospace;
-        font-size:40px;
-        position:relative;
+        font-size:100px;
+        position:absolute;
         background-color: white;
         opacity: 0.5;
         padding: 1px;
         display:inline-block;
         border: 5px inset blue;
-        top:200px;
-    }
-    #img2{
-        position:relative;
-        top:245px;
-        left:-210px;
+        top:315px;
+        left:445px;
     }
     #img1{
+        position:absolute;
         border: 6px inset blue;
         position:relative;
+        top:-55px;
     }
+    #clockoutline{
+        position:absolute;
+        top:307px;
+        left:428px;
+    }
+    #welcome{
+        text-align:center;
+        color:white;
+        text-decoration:underline;
+        position:relative;
+        top:-100px;
+    }
+    #choose{
+        background-color: white;
+        opacity: 0.5;
+        padding: 1px;
+        display:inline-block;
+        border: 5px inset blue;
+        width:60%;
+        position:relative;
+        right:-250px;
+        top:-100px;
+        font-size:20px;
+        }
+        html {
+            background-image: url("http://i.stack.imgur.com/NEuip.jpg");
+        }
+        .imagesImg{
+            
+        }
 </style>
 </head>
 <body onload="startTime()">
@@ -52,10 +94,16 @@ function checkTime(i) {
             <li> <a href="hardware.html">Hardware</a></li>
             <li> <a href="Calc.html">Calculator</a></li>
             <li> <a href="info.html">Info Site</a></li>
-            <li> <a href="clock.html">Clocks</a></li>
+            <li> <a href="clock.html">Clock</a></li>
         </ul>
 <img id="img1" src="http://shasta.summitps.org/_/rsrc/1371078228653/config/customLogo.gif?revision=4" width="225px">
+<h1 id="welcome">Welcome to my clock!</h1>
+<p id="choose">Here you can check the current time, and see a random image pop up as the background!</p>
+
 <div id="txt"></div>
-<img id="img2" src="http://www.powerlineplus.com/wp-content/uploads/2013/08/TV-Border-transparent.png" width="210px" height="100;x">
+
+<img id="clockoutline" src="http://www.powerlineplus.com/wp-content/uploads/2013/08/TV-Border-transparent.png" width="525px" height="150px">
+
 </body>
 </html>
+

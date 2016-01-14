@@ -8,16 +8,16 @@
  padding: 3px;
  color: white;
  transform:rotateZ(0deg);
- transition: .5s all linear;
+ transition: .4s all linear;
 }
 #navbar a{ color:white;
 font-family: courier;
 font-size: inherit;
 text-decoration: none;
- transition: .5s all linear;
+ transition: .4s all linear;
 }
 #navbar li:hover{
     background-color: red;
-     transform:rotateZ(360deg);
+     transform:rotateZ(720deg);
      font-size:40px;
 }
