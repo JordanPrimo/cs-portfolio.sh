@@ -20,16 +20,21 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  
     return i;
 }
+//This is the variable that creates the button in order to randomize the background image.
+var button = document.getElementById('submitButton')
+button.addEventListener("click",button)
+
+var display = document.getElementById('display');
 var pic1Img = "<img class='imagesImg' src='http://orig15.deviantart.net/5810/f/2015/141/f/7/colorful_backgrounds_00394612_by_shinyrai-d8u71c5.jpg'/>";
 var pic2Img = "<img class='imagesImg' src='http://i.stack.imgur.com/NEuip.jpg'/>";
 var pic3Img = "<img class='imagesImg' src='http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg'/>";
 var pic4Img = "<img class='imagesImg' src='https://7-themes.com/data_images/out/76/7030767-3d-background-wallpaper.jpg'/>";
+var pictures = [pic1Img, pic2Img, pic3Img, pic4Img];
 
 if("click"){
 var randNum = Math.floor((Math.random()*(pictures.length)) + 0);
         display.innerHTML = pictures[randNum];
 }
-var pictures = ["http://orig15.deviantart.net/5810/f/2015/141/f/7/colorful_backgrounds_00394612_by_shinyrai-d8u71c5.jpg, http://i.stack.imgur.com/NEuip.jpg, http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg, https://7-themes.com/data_images/out/76/7030767-3d-background-wallpaper.jpg"];
 
 </script>
 
@@ -80,12 +85,13 @@ var pictures = ["http://orig15.deviantart.net/5810/f/2015/141/f/7/colorful_backg
         top:-100px;
         font-size:20px;
         }
-        html {
-            background-image: url("http://i.stack.imgur.com/NEuip.jpg");
+    html {
+        background-image:pictures[randNum];
         }
-        .imagesImg{
-            
-        }
+   
+    .button {
+        position: absolute;
+    }
 </style>
 </head>
 <body onload="startTime()">
@@ -103,7 +109,7 @@ var pictures = ["http://orig15.deviantart.net/5810/f/2015/141/f/7/colorful_backg
 <div id="txt"></div>
 
 <img id="clockoutline" src="http://www.powerlineplus.com/wp-content/uploads/2013/08/TV-Border-transparent.png" width="525px" height="150px">
-
+<input class="button" type="button" value="random" id="submitButton" />
 </body>
 </html>
 
