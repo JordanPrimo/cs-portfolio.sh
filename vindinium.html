@@ -32,11 +32,12 @@
             background-color: white;
             opacity: 0.7;
             padding: 1px;
-            display:inline-block;
+            display:block;
             border: 5px inset blue;
             width:60%;
             position:relative;
-            right:-250px;
+            margin-right:auto;
+            margin-left:auto;
             }
             #introh{
             text-align:center;
@@ -52,11 +53,12 @@
             background-color: white;
             opacity: 0.7;
             padding: 1px;
-            display:inline-block;
+            display:block;
             border: 5px inset blue;
-            right:-180px;
             position:relative;
             width:70%;
+            margin-right:auto;
+            margin-left:auto;
             }
             #vind1{
             display:block;
@@ -68,6 +70,9 @@
             .indent{
             text-indent:50px;
             }
+            .code{
+            color:blue;    
+            }
         </style>
     </head>
 <body>
@@ -77,12 +82,12 @@
             <li> <a href="Calc.html">Calculator</a></li>
             <li> <a href="info.html">Info Site</a></li>
             <li> <a href="clock.html">Clock</a></li>
-            <li> <a href="vindinium.html">AI Bot</a></li>
+            <li> <a href="elevator.html">Elevator</a></li>
         </ul>
 <img id="shasta" src="http://shasta.summitps.org/_/rsrc/1371078228653/config/customLogo.gif?revision=4" width="225px">
 <h1 id="titleh">Welcome to my Vindinium AI Bot page!</h1>
-<h2 id="introh">Introduction</h2>
 
+<h2 id="introh">Introduction</h2>
 <div id="introdiv">
 <p id="intro-p">Welcome to  my Vindinium AI bot page! Here you can learn what Vindinium is, how to play it, and a little bit about my own AI bot made specifically for this game.</p>
 </div>
@@ -107,8 +112,40 @@
 <h2 class="headers">What does my AI bot do?</h2>
 <div class="divclass">
 <p class="indent">
-    
+    While making my AI Bot I made sure that it was able to do 3 things. 
+    I made sure that my bot was able to attack other enemy players, go to a tavern, and  capture any freemines.
+    In order for my AI Bot to do these things I needed to edit and create some JavaScript code.
+    Here is the code for each of my functions:
 </p>    
+</div>
+
+<h3 class="headers">Attacking Enemy Players</h3>
+<div class="divclass">
+<p class="indent">
+    asdfasdf
+    <pre>
+    <code class="code">
+        var enemytoattack = enemyBots[0]
+        for(i = 0; i < enemyBots.length ; i++){
+            if(bot.findDistance(myPos, [enemytoattack.pos.x, enemytoattack.pos.y]) > bot.findDistance(myPos, 
+            [enemyBots[i].pos.x, enemyBots[i].pos.y]) ){
+            closestBot = enemyBots[i];
+            }
+        }
+        
+        else if(bot.yourBot.life > enemytoattack.life) {
+            task = "attack";
+        }
+        
+        if(task === "attack") {
+            console.log("Attacking nearest Bot!")
+            myDir = bot.findPath(myPos, [enemytoattack.pos.x, enemytoattack.pos.y])
+        }
+        
+        
+    </code>
+    </pre>
+</p>
 </div>
 
 <h2 class="headers">What did I learn?</h2>
