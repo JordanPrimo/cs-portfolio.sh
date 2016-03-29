@@ -5,6 +5,7 @@ var item4 = document.getElementById("item4");
 var info1 = document.getElementById("info1");
 var info2 = document.getElementById("info2");
 var info3 = document.getElementById("info3");
+
 //This is the function that allows the user to click the image, and then have the information show up.
 item1.addEventListener("click", function(){
     info1.innerHTML = "1. Super smash bros brawl, is a really fun game to play with family, that is played on the wii.";
@@ -18,6 +19,7 @@ item1.addEventListener("click", function(){
     info3.style.left = item1.offsetLeft + 'px';
     info3.style.top = (item1.offsetHeight + info1.offsetHeight + 10 + info2.offsetHeight + 10) + 'px';
 });
+
 //This is the function that allows the user to click the image, and then have the information show up.
 item2.addEventListener("click", function(){
     info1.innerHTML = "1. Fifa 16 is a fun soccer game that can be played with your friends, family, and by yourself.";
