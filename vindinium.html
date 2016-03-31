@@ -73,11 +73,14 @@
             .code{
             color:blue;    
             }
-            #enemytoattack{
+            .enemytoattack{
             color:red;    
             }
-            #tavern{
+            .tavern{
             color:purple;    
+            }
+            .freemines{
+            color:red;
             }
         </style>
     </head>
@@ -150,7 +153,7 @@
     </code>
     </pre>
     
-    <code id="enemytoattack">
+    <code class="enemytoattack">
 ---------------------------------------------------------------------------------------------------------------------                    
     <pre>
     var enemytoattack = enemyBots[0]
@@ -165,7 +168,7 @@
     In the block of code above, it finds the the closest enemy bot which will be very important for code that will be used later. In this code it uses algorithm to find the closest bot.
     While creating the algorithm I needed to set my position, then identify that I need to find an enemy bot, and lastly set it so that my bot attacks the closest one.    
     
-    <code id="enemytoattack">
+    <code class="enemytoattack">
     <pre>
 ---------------------------------------------------------------------------------------------------------------------            
         else if(bot.yourBot.life > enemytoattack.life) {
@@ -175,7 +178,7 @@
     </code>
     In this very simple block of code, I am simply setting the task to attack an enemy if my life is greater. This block pretty much determines the task.
     
-    <code id="enemytoattack">
+    <code class="enemytoattack">
     <pre>
 --------------------------------------------------------------------------------------------------------------------
 if(task === "attack") {
@@ -210,7 +213,7 @@ if(task === "attack") {
     </pre>    
     </code>
     
-    <code id="tavern">
+    <code class="tavern">
     <pre>
 --------------------------------------------------------------------------------------------------------------------
     if (bot.yourBot.life < 45) {
@@ -220,7 +223,7 @@ if(task === "attack") {
     </code>
     In this simple block of code, I am just setting the task of going to a tavern if my health is less then 45.
     
-    <code id="tavern">
+    <code class="tavern">
     <pre>
 --------------------------------------------------------------------------------------------------------------------        
     if (task === "taverns") {
@@ -240,10 +243,66 @@ if(task === "attack") {
 </p>    
 </div>
 
+<h3 class="headers">Going To A Free Mine</h3>
+<div class="divclass">
+<p class="indent">
+In text written in blue is all the code that was needed to make my bot go to a free mine. I will break down the code for the last time.
+
+<code class="code">
+<pre>
+    else {
+            task = "freemines";
+        }
+    if(task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for(i = 0; i < bot.freeMines.length; i++) {
+                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+            console.log("Claiming a Free Mine!");
+            myDir = bot.findPath(myPos, closestMine);
+        }    
+</pre>    
+</code>
+
+<code class="freemines">
+<pre>
+--------------------------------------------------------------------------------------------------------------------            
+    else {
+            task = "freemines";
+         }    
+</pre>    
+</code>
+In this small block of code, it simply creates the task of going to a free mine.
+
+<code class="freemines">
+<pre>
+--------------------------------------------------------------------------------------------------------------------                
+    if(task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for(i = 0; i < bot.freeMines.length; i++) {
+                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+            console.log("Claiming a Free Mine!");
+            myDir = bot.findPath(myPos, closestMine);
+        }    
+</pre>    
+</code>
+In this block of code I am pretty creating the code for my bot to go to a free mine. 
+Pretty much what is happening in this code is if the task is set to go to a free mine then, the game will go through the algorithm and determine what is the closest mine. 
+After it finds the closest mine then it will set my direction to the mine and will console log that I am claiming a free mine. 
+</p>    
+</div>
+
 <h2 class="headers">What did I learn?</h2>
 <div class="divclass">
 <p class="indent">
-    
+While making my AI bot and making this website, I was able to learn a lot about java script and increse my HTML skills.
+Somethings that I learned about java script was how it works. I learned a lot about how to think while writing java script which really helps the process.
+I also learned a lot more syntax and things that I can do with Java script. For HTML I learned how to organize my code better, and I learned somethings that make designing my website much easier.
 </p>    
 </div>
 

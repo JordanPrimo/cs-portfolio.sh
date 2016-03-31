@@ -1,126 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="index.css">
-    	<link rel="stylesheet" href="navbar.css" type="text/css"/>
-        <title>Elevator</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
+    <title>Elevator</title>
     <style>
-        body{
+        body {
             font-family: courier;
-            background-image: url("http://i.stack.imgur.com/NEuip.jpg")
-         }
+            background-image: url("http://i.stack.imgur.com/NEuip.jpg");
+        }
+        
         #shasta{
-        position:relative;
-        border: 6px inset blue;
-        position:absolute;
-        top:10px;
+            position:absolute;
+            border: 6px inset blue;
+            position:absolute;
+            top:10px;
+            }
+        
+        #welcome {
+            color: white;
+            text-decoration: underline;
+            text-align: center;
+            position: relative;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
         }
-        #welcome{
-        color:white;
-        text-decoration:underline;
-        text-align:center;
+        
+        #introh {
+            text-align: center;
+            text-decoration: underline;
+            color: white;
+            position: relative;
         }
-        #introh{
-        text-align:center;
-        text-decoration:underline;
-        color:white;            
+        
+        #introdiv {
+            background-color: white;
+            opacity: 0.7;
+            padding: 1px;
+            display: block;
+            border: 5px inset blue;
+            width: 60%;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
         }
-        #introdiv{
-        background-color: white;
-        opacity: 0.7;
-        padding: 1px;
-        display:block;
-        border: 5px inset blue;
-        width:60%;
-        position:relative;
-        margin-right:auto;
-        margin-left:auto;
+        
+        .indent {
+            text-indent: 50px;
         }
-        .indent{
-        text-indent:50px;
+        
+        #elev1 {
+            width: 10%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        #elev1{
-        width:10%;
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
+        
+        #elev2 {
+            width: 10%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        #elev2{
-        width:10%;
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
+        
+        #elev3 {
+            width: 10%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-        #elev3{
-        width:10%;
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-        }
-        .floorbutton{
-        width:5%;
-        position:relative;
-        display:block;
-        margin-left:auto;
-        margin-right:300px;
-        top:-550px;
-        padding:60px;
+        
+        .floorbutton {
+            width: 5%;
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: 300px;
+            top: -550px;
+            padding: 60px;
         }
     </style>
-    </head>
+</head>
+
+<body>
+    <ul id="navbar">
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="hardware.html">Hardware</a></li>
+        <li> <a href="Calc.html">Calculator</a></li>
+        <li> <a href="info.html">Info Site</a></li>
+        <li> <a href="clock.html">Clock</a></li>
+        <li> <a href="vindinium.html">AI Bot</a></li>
+    </ul>
+    <img id="shasta" src="http://shasta.summitps.org/_/rsrc/1371078228653/config/customLogo.gif?revision=4" width="225px">
     
-    <body>
-<ul id="navbar">
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="hardware.html">Hardware</a></li>
-            <li> <a href="Calc.html">Calculator</a></li>
-            <li> <a href="info.html">Info Site</a></li>
-            <li> <a href="clock.html">Clock</a></li>
-            <li> <a href="vindinium.html">AI Bot</a></li>
-        </ul>
-<img id="shasta" src="http://shasta.summitps.org/_/rsrc/1371078228653/config/customLogo.gif?revision=4" width="225px">
+    <h1 id="welcome">Welcome to my elevator model!</h1>
+    <h2 id="introh">Introduction</h2>
 
-<h1 id="welcome">Welcome to my elevator model!</h1>
+    <div id="introdiv">
+        <p class="indent">
+            Welcome to my elevator model, where you can play around with an elevator. On this webpage you can send an elevator to different floors. In order to send the elevator to different floor you must click on the floor's button that you want it to go too. Go
+            ahead and try it!
+        </p>
+    </div>
 
-<h2 id="introh">Introduction</h2>
+    <img id="elev1" src="http://2.bp.blogspot.com/-4911Xx5BNzc/Uo3u6-seYUI/AAAAAAAAAvQ/K3SRqjN9XH0/s1600/elevator-doors-border.png">
+    <img id="elev2" src="http://2.bp.blogspot.com/-4911Xx5BNzc/Uo3u6-seYUI/AAAAAAAAAvQ/K3SRqjN9XH0/s1600/elevator-doors-border.png">
+    <img id="elev3" src="http://2.bp.blogspot.com/-4911Xx5BNzc/Uo3u6-seYUI/AAAAAAAAAvQ/K3SRqjN9XH0/s1600/elevator-doors-border.png">
 
-<div id="introdiv">
-    <p class="indent">
-        Welcome to my elevator model, where you can play around with an elevator. On this webpage you can send an elevator to different floors.
-        In order to send the elevator to different floor you must click on the floor's button that you want it to go too. Go ahead and try it!
-    </p>
-</div>
+    <div id="closeddiv3" class="closed">
+        <img id="floor3" class="floorbutton" src="http://i01.i.aliimg.com/img/pb/521/712/261/1281409100069_hz-myalibaba-web13_1910.jpg">
+    </div>
 
-<div id="item-wrapper">
-<img id="elev1" src="http://2.bp.blogspot.com/-4911Xx5BNzc/Uo3u6-seYUI/AAAAAAAAAvQ/K3SRqjN9XH0/s1600/elevator-doors-border.png">
-<img id="elev2" src="http://2.bp.blogspot.com/-4911Xx5BNzc/Uo3u6-seYUI/AAAAAAAAAvQ/K3SRqjN9XH0/s1600/elevator-doors-border.png">
-<img id="elev3" src="http://2.bp.blogspot.com/-4911Xx5BNzc/Uo3u6-seYUI/AAAAAAAAAvQ/K3SRqjN9XH0/s1600/elevator-doors-border.png">
+    <div id="closeddiv2" class="closed">
+        <img id="floor2" class="floorbutton" src="http://i01.i.aliimg.com/img/pb/521/712/261/1281409100069_hz-myalibaba-web13_1910.jpg">
+    </div>
 
-<div id="closedelev1" class="closed">
-<img id="floor1" class="floorbutton"src="http://i01.i.aliimg.com/img/pb/521/712/261/1281409100069_hz-myalibaba-web13_1910.jpg">        
-</div>
-
-<div id="closedelev2" class="closed">
-<img id="floor2" class="floorbutton" src="http://i01.i.aliimg.com/img/pb/521/712/261/1281409100069_hz-myalibaba-web13_1910.jpg">    
-</div>
-
-<div id="closedelev3" class="closed">
-<img id="floor3" class="floorbutton" src="http://i01.i.aliimg.com/img/pb/521/712/261/1281409100069_hz-myalibaba-web13_1910.jpg">
-</div>
-
-<div id="openelev1" class="open">
-<img id="opened1" src="http://cdn9.staztic.com/app/a/1351/1351223/gangnam-style-elevator-lwp-977030-1-s-307x512.jpg">
-</div>
-
-<div id="openelev2" class="open">
-<!--> Javasciprt contains images<-->
-</div>
-
-<div id="openelev3" class="open">
-<!--> Javasciprt contains images<-->
-</div>
-
-</div>
-<script src="elevator.js"></script>
-    </body>
+    <div id="closeddiv1" class="closed">
+        <img id="floor1" class="floorbutton" src="http://i01.i.aliimg.com/img/pb/521/712/261/1281409100069_hz-myalibaba-web13_1910.jpg">
+    </div>
+    <script src="elevator.js"></script>
+</body>
 </html>
