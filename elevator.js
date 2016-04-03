@@ -10,6 +10,7 @@ var openedimg = "http://charlottelawlibrary.files.wordpress.com/2013/09/people-i
 var openedimg2 = "http://www.cliseetiquette.com/wp-content/uploads/2011/07/woman-on-cell-phone-in-elevator.jpg";
 var openedimg3 = "https://s-media-cache-ak0.pinimg.com/736x/67/b4/78/67b47878bf3301fd369e9c4b6a9d113c.jpg";
 
+//This code determines what the first button will do. So when button one is clicked elevator 2 and 3 will show a closed image, and then elevator 3 will show an opened image. The rest of the code does the same thing but in different variations.
 button1.addEventListener("click", function() {
     elev2.src = closedimg;
     elev3.src = closedimg;
