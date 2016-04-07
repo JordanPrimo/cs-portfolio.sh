@@ -13,7 +13,7 @@ var openedimg3 = "https://s-media-cache-ak0.pinimg.com/736x/67/b4/78/67b47878bf3
 //This code determines what the first button will do. So when button one is clicked elevator 2 and 3 will show a closed image, and then elevator 3 will show an opened image. The rest of the code does the same thing but in different variations.
 button1.addEventListener("click", function() {
     elev2.src = closedimg;
-    elev3.src = closedimg;
+    elev1.src = closedimg;
     setTimeout(function() {
     elev3.src = openedimg;
         alert("Elevator Moving Floors!");
@@ -30,7 +30,7 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-    elev1.src = closedimg;
+    elev3.src = closedimg;
     elev2.src = closedimg;
     setTimeout(function() {
     elev1.src = openedimg3;
